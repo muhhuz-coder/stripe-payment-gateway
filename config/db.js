@@ -1,5 +1,8 @@
-// config/db.js
 const { Pool } = require('pg');
+const dotenv = require('dotenv');
+
+// Ensure environment variables are loaded
+dotenv.config();
 
 const pool = new Pool({
   host: process.env.DB_HOST,
