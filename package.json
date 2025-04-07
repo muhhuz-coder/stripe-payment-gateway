@@ -1,11 +1,13 @@
 {
   "name": "stripe-payment-gateway",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend for Stripe payment gateway integration",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "migrate": "node migrations/run.js"
+  },  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,5 +20,8 @@
     "jsonwebtoken": "^9.0.2",
     "pg": "^8.14.1",
     "stripe": "^18.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
